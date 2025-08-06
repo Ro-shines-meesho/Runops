@@ -1,0 +1,8 @@
+{
+  "indexed_at": "2025-07-14T13:25:35.822236",
+  "total_runbooks": 0,
+  "total_chunks": 0,
+  "embedding_model": 384,
+  "model_name": "all-MiniLM-L6-v2",
+  "runbook_stats": {}
+}

@@ -1,0 +1,8 @@
+.pre-commit-config.yaml
+trufflehog/
+.env
+venv/
+__pycache__/
+
+.env
+test/fetch.py

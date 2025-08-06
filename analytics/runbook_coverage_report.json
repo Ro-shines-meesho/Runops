@@ -1,0 +1,2093 @@
+{
+  "summary": {
+    "total_messages": 864,
+    "covered_by_runbook": 351,
+    "missing_runbooks": 513
+  },
+  "by_category": {
+    "general": {
+      "total": 343,
+      "covered": 0,
+      "missing": 343
+    },
+    "jenkins": {
+      "total": 246,
+      "covered": 175,
+      "missing": 71
+    },
+    "kubernetes": {
+      "total": 103,
+      "covered": 68,
+      "missing": 35
+    },
+    "service": {
+      "total": 121,
+      "covered": 99,
+      "missing": 22
+    },
+    "deployment": {
+      "total": 33,
+      "covered": 0,
+      "missing": 33
+    },
+    "database": {
+      "total": 18,
+      "covered": 9,
+      "missing": 9
+    }
+  },
+  "missing_runbooks": [
+    {
+      "query_text": "This is a trial message",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please merge this : <https://github.com/Meesho/devops-helm-charts/pull/122540>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone help here please - <https://meesho.slack.com/archives/C02PU08F8E4/p1744307974019669>\n<https://meet.google.com/meu-fzad-iby>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Stg deployment always showing failure in the PR. tried multiple times to take this to draft and then open again. Even opened a new PR but no luck. Check stg environment everything is successful. can you please check once\n<https://github.com/Meesho/orion/pull/169>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Stg deployment fails again and again , <https://github.com/Meesho/affiliate-web/pull/268>\nhave to deploy this urgently, on stg environment everything is successful .\nplease check",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please update experimentsData.json in following path <https://console.cloud.google.com/storage/browser/_details/gcs-supl-fnf-config-prd/fnf-route-aggregator-prd/experimentsData.json?hl=en&amp;invt=AbucVw&amp;project=meesho-supply-prd-0622>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> The servie is running continously on CPU ~90% from 10:40AM. still autoscaling did not added 1 more pod.\nCPU autoscaling was set to 80%. I have just decreased it to 70%. Can we check the reason for this?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> Please help with this ticket - <https://meesho.atlassian.net/browse/DEVOPS-18556>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/fy-iop/pull/285>\ncan you help with this pr",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can we please clear the cdn cache for this api path: `api/1.0/search/recent/images` , stale data was there\ncc <@U0695KEN1C7>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> my PR is stuck in checks, also sonar scan is failing due to below error\n\n`[2025-04-11T06:48:59.384Z] [ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar (default-cli) on project store-front: Unable to execute SonarScanner analysis: Fail to get bootstrap index from server: Status returned by url [<https://sonarqube-dev.meeshogcp.in/batch/index>] is not valid: [503] -&gt; [Help 1]`\n`[2025-04-11T06:48:59.384Z] [ERROR]` \n`[2025-04-11T06:48:59.384Z] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.`\n`[2025-04-11T06:48:59.384Z] [ERROR] Re-run Maven using the -X switch to enable full debug logging.`\n`[2025-04-11T06:48:59.384Z] [ERROR]` \n`[2025-04-11T06:48:59.384Z] [ERROR] For more information about the errors and possible solutions, please read the following articles:`\n`[2025-04-11T06:48:59.384Z] [ERROR] [Help 1] <http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException>`\n\n<https://github.com/Meesho/store-front/pull/2951/files>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> 1 check failing on my PR for a long time, how to resolve this?\nPlease merge:  <https://github.com/Meesho/ai-agent-assist/pull/5>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Rollback is not working on argo, please check\n<https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/prd-product-amplifyr-recommendation?resource=>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg check always failing. I have tried to mark the PR draft and ready to review 3-4 times but still not working. Please check\n<https://github.com/Meesho/orion/pull/171>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> please help to disable this alert  `Consumer_NoData_Alert`  for `mini-url-eks` , this is expected as we have stopped consumer in this namespace\ncc: <@U0273FS0EQK>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> on prod VM we are able to see CPU utilisation at 70-75% in Observablity window for this instance `mcache-cntr-shared-edge-proxy-secondary-1-prd-ase1` in central-prd project. But while doing htop in the instance its just 38% utilised! Can we check this and if this is an issue then can we raise a ticket with GCP?\ncc: <@U026D2W91KN>",
+      "category": "general"
+    },
+    {
+      "query_text": "@devops-oncall I wanted to spawn new pods and I deployed the last release only, ringmaster is showing that it's deployed successfully but new pods didn't come up in argo\nhttps://ringmaster.meeshogcp.in/applications/cicd/repo/meesho-sputnik/status/51",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "@devops-oncall\nneed help with rolling back develop branch to its second last commit\ncan someone help?\n@app-support-team",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can we please check this PR, it's ringmaster deployment status check taking too longer time: <https://github.com/Meesho/search-iacg/pull/860>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Checks are failing in this PR although when fetching details it is showing successful, can you please help here: <https://github.com/Meesho/pdp-iop/pull/204>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Build is failing for this PR although it is successfully building in the local , can you please help <https://github.com/Meesho/post-order-aggregator/pull/1476>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you check why the canary is not able to deploy, gettting error\n<https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-taxonomy-read>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> The deployed to the main instance is not processing further please check this urgently -\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/agent-support-aggregator/status/157> ,\nArgo - <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-agent-support-aggregator?resource=>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Need access to github, Please help in providing the same",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U039GPMUX8X> <@U06MFC4Q8GH>.\ncan you please check who has created this deployement, this is not done by our team\n\n`<https://github.com/Meesho/devops-helm-charts/commit/4384df9253f1109a37203494d30fc26e741d3352>`",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> any one available for one prod issue?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/grocery-supply-orchestration/pull/263> - the stg deployment check is getting queued even though the deployment has been done successfully\ncc <@U06632ZM3FZ>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you help with <https://meesho.atlassian.net/browse/ACL-2538|this>?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please check this <https://meesho.atlassian.net/browse/DEVOPS-18554>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/122780> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  can we quickly connect for  <https://meesho.pagerduty.com/incidents/Q2RMPXMKZ4GDT0?utm_campaign=channel&amp;utm_source=slack|https://meesho.pagerduty.com/incidents/Q2RMPXMKZ4GDT0?utm_campaign=channel&amp;utm_source=slack>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> We want to onboard a new go repository <https://github.com/Meesho/comms-serving|comms-serving> and need to publish <https://github.com/Meesho/comms-client|comms-client> jar. Could we connect once to discuss the same?\ncc: <!subteam^S084LAQ5M43> <@U03N19ESXSQ> <@U0318LD7AN5>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U06MFAMKYDP>\ncan you check why this is stuck in the final check?\n<https://github.com/Meesho/cx_gen_ai/pull/846>\n\ncc: <@U073Z94LC23>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\ni\u2019m not able to merge my changes to main branch of retry-utils\nas some hooks are failing where it is stating that the pr should be raised from develop branch\nbut i think these hooks were not implemented a month back as i can see multiple ftr branches directly mereged to develop and now heads of develop and main are completely different and develop does not have multiple changes that are there in main and since it is a shared repo, a single person will not have context of all these changes to merge these branches\n\nthis is becoming a blocker for deployment\ncan you please merge this pr for now\n<https://github.com/Meesho/RetryUtils/pull/228/files>\n\ncc: <@U03C6EWAG5N>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S07V94NTTB9>  Please check on the following VM - Disk Space is Full and we are getting alert.\n<https://console.cloud.google.com/compute/instancesDetail/zones/asia-southeast1-a/instances/test-mcache-backup-script?invt=Abuz-g&amp;project=meesho-supply-prd-0622|test-mcache-backup-script>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> are we concurrently  (or have plan) to centrally onboard consumer-group-rebalance alert?",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S0276B95C2G>, I recently decreased the threshold for 4xx on pulse for alerts, from 100 to 10.\nAlthough threshold was breached, we did not get any alerts. could you please check.\n*supplier-platform-promotions*\n<https://pulse.meeshogcp.in/alert/alerts/supplier-platform-promotions>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> <https://github.com/Meesho/widgetaggregator/pull/1090>\nthis PR is stuck in quality gate for a long time, can anyone check this please? we need to deploy this asap",
+      "category": "deployment"
+    },
+    {
+      "query_text": ":blinking_siren::blinking_siren:*<!here>* we see , while raising issues we are not filling the input asked by bot proactively . Please kindly help with this if we would like devops on call further attention\n\ncc: <!subteam^S07BDM1DPB2>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U073Z7CE7QQ> could you help check why pre-prod deployment check is failing for this PR - <https://github.com/Meesho/store-front/pull/2964/checks?check_run_id=40573406315>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "*<!subteam^S0276B95C2G>* Could you please help check why the *\"Build Docker Image\"* and *\"Continuous Integration\"* steps are failing on this PR?\n :link: <https://github.com/Meesho/supplier_platform_fulfillment/pull/895>\nThe changes are working fine when I run them locally.",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "@devops-oncall unable to merge github PR and it's displaying the ringmaster-deployment-status failed for gcp_int even though it's deployed successfully. Please check.\nhttps://github.com/Meesho/meesho-sputnik/pull/3286",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "@devops-oncall Can you please help here -\nGetting some issue while building in local\n[ERROR] Failed to execute goal on project nexus: Could not collect dependencies for project com.valmo:nexus:jar:1.4.2\n[ERROR] Failed to read artifact descriptor for com.meesho:UAIDLibrary:jar:0.0.1\n[ERROR] \tCaused by: The following artifacts could not be resolved: com.meesho:UAIDLibrary:pom:0.0.1 (absent): Could not transfer artifact com.meesho:UAIDLibrary:pom:0.0.1 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [redshift (http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release, default, releases+snapshots)]\n[ERROR] Failed to read artifact descriptor for com.meesho:common-utils:jar:4.0.0-RELEASE\n[ERROR] \tCaused by: The following artifacts could not be resolved: com.meesho:common-utils:pom:4.0.0-RELEASE (absent): Could not transfer artifact com.meesho:common-utils:pom:4.0.0-RELEASE from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [redshift (http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release, default, releases+snapshots)]\n[ERROR] Failed to read artifact descriptor for com.meesho:mq-client-blocking:jar:3.0.18.RELEASE.17",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "@devops-oncall why this check failed even tho both deployables successfully deployed in pre prod?\nhttps://github.com/Meesho/widgetaggregator/pull/1091/checks?check_run_id=40578881570\ncan we check this asap? need to deplyo this PR today",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you check\n<https://meesho.slack.com/archives/C08HY56MMFC/p1744726946277969?thread_ts=1744726515.780919&amp;cid=C08HY56MMFC>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S03GLM4JTFX> received an alert for high disk usage for `vm-deng-dpcon-metabase-ext-prd-ase1-0r5n` VM. Please look into it",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://github.com/Meesho/devops-helm-charts/pull/122854>\ncan someone approve this ?\nwanted to adjust the slow start configuration of taxonomy-new.\ncc <@U02073X3R9V> <@U08AY32JB5Y>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/122857> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "@farmiso-devops-poc The stg status check is taking a lot of time on Farmiso Backend. I am running the checks for the second time. It ran for more than 15 mins last time also and still no update here.\ncc: \n@hitendra.arvapalli\n@abhishek.kumar.singh",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>  can someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can we check if file on this bucket are accessible publically?\nIs there any DNS for accessing these files publically?\n<https://console.cloud.google.com/storage/browser/_details/gcs-supl-offer-meesho-prd/supplier_optin/EligibleProducts_1000037_1685117138723.xlsx;tab=live_object?project=meesho-supply-prd-0622|https://console.cloud.google.com/storage/browser/_details/gcs-supl-offer-meesho-prd/suppl[\u2026]8723.xlsx;tab=live_object?project=meesho-supply-prd-0622>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> can you mark this this RA as resolved, <https://meesho.atlassian.net/wiki/spaces/EW/pages/4019060778/S1-2025-03-07-Increase+in+Partner+App+Mongo+Latency>\nThis is tracked saperately , and not required at all.\n\nthis has been tracked here: <https://meesho.atlassian.net/wiki/spaces/EW/pages/4021125129/S1-2025-03-07-Increase+in+Latency+of+Partner+App+Mongo>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Prod deployment stuck since 20 mins as <https://github.com/Meesho/online-cg/pull/683/checks?check_run_id=40635289273|ringmaster-stg-deployment-status> check is in pending state\n<https://github.com/Meesho/online-cg/pull/683>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> we are seeing that the recent logs of `prd-return-recon-high-resource-cron-worker` is not being exported to gcs bucket. Can you pls look into it and resolve the same ?\n\n<https://console.cloud.google.com/storage/browser/gcs-infr-dvps-meesho-logs-prd/supply/prd-return-recon-high-resource-cron-worker?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&amp;project=meesho-admin-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=false|https://console.cloud.google.com/storage/browser/gcs-infr-dvps-meesho-logs-prd/supply/prd[\u2026]in-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=false>\ncc: <!subteam^S03LEH4GP6Y>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Couple of checks are failing with error : `App Sync Failed` . Can u please help here.\nPR: <https://github.com/Meesho/rx-fa-recommendations/pull/461>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you check why the Sync getting stucked in both stg and pre-prod\n<https://argocd-dev.meeshogcp.in/applications/stg-listing-go-live?resource=>\n<https://argocd-supply-prd.meeshogcp.in/applications/int-listing-go-live?conditions=false>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S05HK8S4NNS> I wanted to create a new env on toolchain to deploy and test my changes along with changes from some other team. I was creating the environment in Environment Plan and launch but getting error that launch with stg profile . Can you help please .\ncc: <@U04CXFQRW92> <@U06BL0HQ7EH>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg pod is going in crashloop backoff : <https://argocd-dev.meeshogcp.in/applications/argocd-dev/stg-supplier-consent-management?resource=>\ndue to this not able to merge PR",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\npls approve and merge this PR\n<https://github.com/Meesho/devops-helm-charts/pull/122922>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can someone please check this PR: <https://github.com/Meesho/search-autocomplete/pull/197>, it takes too longer time to pass the ringmaster deployment status check",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can someone please help to rollback the deployment .\nArgoCD : <https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/prd-rx-fa-recommendations?rollback=-1&amp;view=network&amp;resource=>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> This PR is taking very long time for staging checks to complete. Can u please check ?<https://github.com/Meesho/agent-support-aggregator/pull/1623>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Staging check is stuck since 20 mins, have restarted too, prod deployment is blocked please check <https://argocd-dev.meeshogcp.in/applications/argocd-dev/stg-reco-engine-web>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Staging deployment is stuck since 30 mins. Please check\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/user-profile/status/113>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<@U06MFAMKYDP>\ncan you help me identify the error here?\n<https://github.com/Meesho/cx_gen_ai/pull/850>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nWe were trying to build jar for `communicator-notificationstore-commons` using : `common-dependancies-CI-only` but are facing some issues with it. Even though the job ran successfully, but the jar is not getting reflected on JFrog.\nCould you please help here?\ncc : <!subteam^S03SQB1P3EX>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you review and merge this <https://github.com/Meesho/devops-helm-charts/pull/122992|PR>?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Unable to Merge PR due to ringmaster-deploy-int failed. <https://github.com/Meesho/orion/pull/177> I can see on ringmaster this is working fine on the UI",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you please join this bridge. Need to revert the last deployment and couldn\u2019t find the snapshot\n<https://meet.google.com/hph-uwgg-puq?authuser=0&amp;hl=en>\ncc : <@U020VRU8A7M>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> in Github, re-review is not being asked if someone makes another commit after the approval. Please check. This has happened in multiple repos.\n<https://github.com/Meesho/admin-panel-communications/pull/261>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you check why 3 pods are running here : <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-supplier-consent-management>\nwe have set min to 2, and cpu utilisation is also very low so why desired number is 3?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> App Health is showing as progressing since last 30 mins. Please help here\n<https://argocd-demand-prd.meeshogcp.in/applications/int-admin-panel-discovery?resource=>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please update experimentsData.json in following path <https://console.cloud.google.com/storage/browser/_details/gcs-supl-fnf-config-prd/fnf-route-aggregator-prd/experimentsData.json?hl=en&amp;invt=AbucVw&amp;project=meesho-supply-prd-0622>\ncc - <@U06CBN9K1AL>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please help with this\n<https://meesho.atlassian.net/browse/DEVOPS-18583>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please review and merge this PR : <https://github.com/Meesho/devops-helm-charts/pull/123067>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> seeing some issue here in cpu_request type, but we haven't changed anything recently and deployed 2 days back as well, can you please check this asap, blocked on release.\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/price-aggregator/status/144>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\npr is stuck at staging deployment even when the deployment is completed on staging.\npr-&gt;<https://github.com/Meesho/supplier_platform_growth/pull/994/checks?check_run_id=40723453649>\nringmaster -&gt; <https://github.com/Meesho/supplier_platform_growth/pull/994/checks?check_run_id=40723453649>\n\ncan you please help here, need to release a feature",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I am facing access issue in VM login and we have one activity to do for TOSS DB in this VM. I was able to login ~1month back and not able to login now.\nCan someone please help.\nVM:vm-dataengg-dp-kafka-connect-mysql-01g-prd-ase1\nCC: <@U02HAH0C8AE>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> for prd-online-feature-store-read-v4-experiment\nOur pods are healthy, but we're still getting a 'Pods Unavailable' error. Can you please check? cc <@U02E6BXGM0B>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> kindly provide admin access for repo <https://github.com/Meesho/MAB-consumer> to me and <@U03BDUPU7P1>\nGithub ID - Shreyans95, Siddhant07-Meesho\ncc <@U041Z2SFBQS>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://console.cloud.google.com/compute/instancesDetail/zones/asia-southeast1-a/instances/vm-cntr-admin-upload-supplier-new-dev?orgonly=true&amp;project=meesho-central-dev-0622&amp;supportedpurview=organizationId|https://console.cloud.google.com/compute/instancesDetail/zones/asia-southeast1-a/instance[\u2026]=meesho-central-dev-0622&amp;supportedpurview=organizationId> - this machine is stopped, we are not able to deploy on PROD.",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nGetting `The 'Meesho' organization has enabled or enforced SAML SSO.`",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U073Z7CE7QQ> pre prod deployment check is failing on develop to main PR, The staging build is happening properly but in pre-prod it is showing crashloopbackoff , please help.\n<https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/int-merch-merchandising-web?view=tree>\npr: <https://github.com/Meesho/merchandising/pull/2499>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you make develop as default branch for the repo <https://github.com/Meesho/logistics-utils>",
+      "category": "general"
+    },
+    {
+      "query_text": "this is a est mnessage",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S05HK8S4NNS>\nhow to create environment on toolchain with supplier-panel-url similar to <https://toolchain-dashboard-dev.meeshogcp.in/toolchain/env_orch/running_environments?environment_id=8>\n\nI've created one <https://toolchain-dashboard-dev.meeshogcp.in/toolchain/env_orch/running_environments?environment_id=8654> - but I don't see supplier-panel URL here",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> build is failing for this develop to main branch. Can you pls check this: <https://github.com/Meesho/affiliate-web/pull/275>\ncc: <@U02R8RH84N9> <@U02FGFQK3UH>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please merge this pr\n<https://github.com/Meesho/devops-helm-charts/pull/123151>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please merge this pr\n<https://github.com/Meesho/devops-helm-charts/pull/123157>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> not able to hit api on prd - grocery-reconciliation-and-accounting\ngetting: `Error: getaddrinfo ENOTFOUND <http://grocery-reconciliation-and-accounting.prd.meesho.int|grocery-reconciliation-and-accounting.prd.meesho.int>`\nargoCD: <https://argocd-farmiso-prd.meeshogcp.in/applications/argocd-farmiso-prd/prd-grocery-reconciliation-and-accounting>\napi: <http://grocery-reconciliation-and-accounting.prd.meesho.int/health>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR checks are failing for below PR. Can someone please check this and merge??\n<https://github.com/Meesho/supplier_platform_stats/pull/195>\ncc: <@U02ESMGPJ59> <@U05QXT5570X> <@U073Z7CE7QQ>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Ringmaster deployment status check is in progress for the past 40 mins\n<https://github.com/Meesho/affiliate/pull/479>\nPlease check",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Added CODEOWNERS files to these 4 repositories. Please enforce a policy requiring at least one approval from the listed owners for all PRs targeting the develop or main branches.\n<https://github.com/Meesho/iop-component-starter>\n<https://github.com/Meesho/cg-algo-starter>\n<https://github.com/Meesho/cg-algo-data-source>\n<https://github.com/Meesho/iop-component>\ncc <@U03MS927CEA>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> could you please provide me access to bigquery? ticket: <https://meesho.atlassian.net/browse/ACL-2539>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S084LAQ5M43>\nCan someone help in pushing the comms-client jar to valmo jfrog\nHave some dependencies we need to figure out\ncc <@U03NBGJNU5P> <@U06NF3CF03A>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nI need permission to connect to VM instances using SSH\ncc: <@U03K8SPCY77>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need access of this link <http://grafana-prd.mppl.meesho.com/>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> need help regarding prod issue, can you join this call <https://meet.google.com/vgs-jdvn-avi?authuser=0>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>  <!subteam^S0276B95C2G>\ncan someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\n<https://github.com/Meesho/affiliate-web/pull/285> Can't deploy this PR\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/affiliate-web/deployments> It is deployed correctly on prod internal .",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need help wrt to setting up cronitor alert for the crons which we want to run in VMs!\ncc: <@U026D2W91KN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> getting issue with stg-deployment-status in github. have tried with drafting but still its getting stuck there! Can someone check this.\n<https://github.com/Meesho/mcache-control-plane/pull/90>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can someone help me upload the lottie url to gcs server\n<https://meesho.atlassian.net/browse/DEVOPS-18596>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> pre-prod deployment check is failing for this release <https://github.com/Meesho/supplier_platform_fulfillment/pull/903|pr> .can you please check\nstg deployment check is successful. pre-prod is failing",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> for this pod in cis-consumer, the POD CPU has been spiking. Can you help in debugging the reason?\n```prd-cis-consumer-5cb45bc979-pdtp7 | gke-k8s-supply-prd-a-np-supl-xsupl-me-54ef7a14-bxhh```",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<@U073Z7CE7QQ> <@U07BZVDC9ST> <!subteam^S0276B95C2G>\nProd deployment is stuck, please help.\nArgo : <https://argocd-demand-prd.meeshogcp.in/applications/prd-organic-feed-web?view=network&amp;resource=>\ncc : <@U03L05M1TQU>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please merge this\n<https://github.com/Meesho/devops-helm-charts/pull/123276>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you pls check the check is failing for merging the PR from develop to main",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> One of the POA pods was unavailable around 11.40 AM 20th April.\nCan we check what the issue was ?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Getting this msg while trying to rollback on prd. <https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/prd-user-profile-fallback-eks?view=tree&resource=&operation=false|Argo>\ncc: <@U06JSGZ335M> <!subteam^S02L79UUKND>\n```Unable to sync: error resolving repo revision: rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 10.137.34.211:8081: connect: connection refused\"```",
+      "category": "general"
+    },
+    {
+      "query_text": "@app-support-team Can we upload the below file in the sample path\nsample path :\n<https://images.meesho.com/files/animations/payment/trust_com_shimmer.lottie>\n<https://images.meesho.com/files/animations/payment/banner_50.lottie>\n<https://images.meesho.com/files/animations/payment/banner_20.lottie>\n<https://images.meesho.com/files/animations/payment/savings_coupon.lottie>\n<https://images.meesho.com/files/animations/payment/savings_realisaton_shimmer.lottie>\ncc:\n<@U02J6695TLN> | <@U03MEA0BW6M>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U03NBGJ11RP> <@U020VRU8A7M> Getting rps 0 pd alert for price-agg-go. Is this expected? Please have a look at the svc",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> we have rolled back the start canary analysis request but still one pod is active in canary. Can you check please.\n<https://argocd-demand-prd.meeshogcp.in/applications/prd-community-web-eks?resource=>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> App in degraded state, not able to deploy/rollback <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-offer-platform-internal?resource=&amp;rollback=-1>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  DS ZK disk usage at 80%",
+      "category": "general"
+    },
+    {
+      "query_text": "Hey <!subteam^S0276B95C2G> getting the following error while building maven package\n```Failed to execute goal on project search-indexing-rule-commons: Could not resolve dependencies for project com.meesho:search-indexing-rule-commons:jar:2.9.2-RELEASE: Failed to collect dependencies at com.meesho.marvel:models:jar:3.27.3-RELEASE: Failed to read artifact descriptor for com.meesho.marvel:models:jar:3.27.3-RELEASE: Could not transfer artifact com.meesho.marvel:models:pom:3.27.3-RELEASE from/to redshift (<http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release>): authorization failed for <http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release/com/meesho/marvel/models/3.27.3-RELEASE/models-3.27.3-RELEASE.pom>, status: 403 Forbidden```\nCan someone please help?",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need following pod\u2019s logs for debugging a prod issue: `prd-ad-online-cg-grpc-web-primary-678f664658-tjrv6` , can you pls help?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<@U06MFAMKYDP> <@U06632ZM3FZ>\nneed your help in testing some host changes for gatekeeper migration\nwe have our IPs whitelisted at 3p's end so need to test new hosts from prd environment.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nplease add the following logo to following link- <https://images.meesho.com/files/headless/BHIM.png>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U07B72HU81W> plz resolve this\n<https://meesho.atlassian.net/browse/DEVOPS-18603>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U07BZVDC9ST> can you delete old job from this cron <https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/prd-search-dr-cron?view=tree&amp;resource=> I don't hv permission.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> unable to merge the PR, getting below error. can you please help\nPR - <https://github.com/Meesho/online-cg/pull/684>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S02TA1C5RLP>!\nWe have forked an external repo on github, and I want to raise a security check ticket for it. Do I create a ticket here for that? <https://meesho.atlassian.net/jira/software/c/projects/SECREV/issues?jql=project%20%3D%20%22SECREV%22%20ORDER%20BY%20created%20DESC>\n\nForked repo: <https://github.com/Meesho/graphhopper>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Need some assistance here\nI am unable to check deployable's status on argocd for stg and pre-prod.\nBlocked by following",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR : <https://github.com/Meesho/search-relay/pull/36>\nStaging check is failing . Even the new pod on staging comes up healthy .\nCan you please help",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please give me the access to the dev argocd - <https://argocd-dev.meeshogcp.in/>\ngithub username - anuraags2719",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> need access to create table in bigquery\n<https://meesho.atlassian.net/browse/ACL-2556?linkSource=email>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> we want to change the alert threshold for this alert, but it's showing update fail error, can you please check: <https://pulsedev.meeshogcp.in/alert/alerts/advertisement-pdp-widget>\ncc: <@U049X3Z87AT>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this <https://github.com/Meesho/devops-helm-charts/pull/123565> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you check this argo-cd is in degraded state - <https://argocd-dev.meeshogcp.in/applications/argocd-dev/stg-lineage-api?resource=>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>  can someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need help with the zookeeper config update on the toolchain, doing this first time not getting any option for editing config just the update button",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S0538KCDTLN> Some metrics are missing from 1:36PM on grafana is there any issue going in?\nRef: <https://grafana-prd.meeshogcp.in/d/c208fff3-1a5e-43a0-a83e-7d2f0a04faa0/catalog-visibility-filtering?orgId=1&amp;from=now-30m&amp;to=now&amp;refresh=1m&amp;viewPanel=3|https://grafana-prd.meeshogcp.in/d/c208fff3-1a5e-43a0-a83e-7d2f0a04faa0/catalog-visibilit[\u2026]ering?orgId=1&amp;from=now-30m&amp;to=now&amp;refresh=1m&amp;viewPanel=3>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> updation failed, not allowing me to update the alerts, can someone check.\n<https://pulse.meeshogcp.in/alert/alerts/voice-bot>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you help with this ticket?\n<https://meesho.atlassian.net/browse/DEVOPS-18613>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U03L05M1TQU> getting pod pending alerts for a new deployable - `prd-pfeed-search-elastic-indexer-snf-partial`. Please check\ncc <@U07BQR9SBLM>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> latest version deployed on staging but the check is failing in PR : <https://github.com/Meesho/offer-platform/pull/983>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://meesho.slack.com/archives/C02S7A471EH/p1745505955317569>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please give access to argocd of data engg",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you please help with argocd access?\nJIRA : <https://meesho.atlassian.net/browse/ACL-2560>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Not able to connect to ssh tunnel `ubuntu@10.138.1.230`\ncan anyone please check?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109> locked out of my laptop, can someone from IT team help?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> whenever we add new consumers to the application, do we need to add uptime/lag alerts manually or is there a way we can do it through script?\nwe have recently added 4 new consumers to our app and alerts are missing",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you please provide access to agrocd?\n```<https://argocd.prd.valmo.in/applications/prd-nexus-sub-worker?resource=>```",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> need help with cdn caching of apis. Creating doc on fallback system for various real estates like homepage, pdp etc. Can you guys help from where i can get list of cdn cached apis",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> I am unable to access the configs present in vault. Currently i am not able to see any configs.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nPleae merge this\n<https://github.com/Meesho/meesho-chat-ui/pull/110>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> the pods are not coming up for inventory admin <https://argocd-supply-prd.meeshogcp.in/applications/prd-inventory-consumer?view=tree&amp;resource=> could u check this",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> We are getting this alert regularly :- CRITICAL - PRD - p1 - Producer-Pod-Restarted-Multiple-Times - supply - experience - agent-support-aggregator-cron. When I checked the pod it was 3 days old, but there were errors in the events :- Unhealthy\nReadiness probe failed: Get \"<http://10.131.97.46:8234/health>\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)\nUnhealthy\nLiveness probe failed: Get \"<http://10.131.97.46:8234/health>\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)\ncan u please help me understand it ?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> this PR is taking too much time for stg deployment status update, can u please help : <https://github.com/Meesho/agent-support-aggregator/pull/1640>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> Need to create a public dns for stg-edge-proxy-meesholink deployable. This will be used by external clients\ncc: <@U06BNTHSBK4>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<@U06MFC4Q8GH> Facing some issues with ringmaster, seeing this error on supplier-product-quality-cron\n`The application is either not running or does not have HPA configured`\nAlso, not able to reduce the number of pods in consumer deployable. Can you please help here.\nCC: <@U06BNQCMMD1> <@U03MYSVP3DG>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> in this project `meesho-central-dev-0622` , maximum version supported by tidy is `1.20`. Can you help us upgrade this to `1.22`?\n\ncc <@U027V5VB4GG>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> got 5xx for taxonomy-hero from one specific pod on 25th April 7:37am , can u plz help in investigating the reason as other metirces look fine (redis and db latency), This was a observed on new pod, but it received a gradual RPS increase and also no rps spike was there.\nAttaching screenshot, plz have a look.\ncc: <@U02073X3R9V> <@U03L5EPMKQW> <@U08AY32JB5Y>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please merge the PR\n<https://github.com/Meesho/ai-agent-assist/pull/6>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> getting err for these two while calling analysis-approval api -\nprd-storefront-recommendation\nprd-storefront-secondary\n```{\n    \"message\": \"Workflow not found: workflow execution already completed\\n\",\n    \"status\": \"error\"\n}```",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> We want to create a new api key with restriction only for using maps within the meesho app for this <https://meesho.atlassian.net/browse/VL-1004|ticket>\nThis key needs to be created under meesho-supply-prd gcp project. Do we have any process around this?\ncc - <@U02102E8JGZ> <@U9U48EZ8C> <@U03MVV5J2JZ>",
+      "category": "service"
+    },
+    {
+      "query_text": "Hi All,\nNeed access the to list of things mentioned in the tickets. Kindly approve.\n<https://meesho.atlassian.net/browse/DEVOPS-18621>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/123950> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "PR : <https://github.com/Meesho/rx-fa-recommendations/pull/478>\nBuild maven pkg check is failing with the following error :\n```Failed to collect dependencies at com.meesho.feed:feed-commons:jar:4.11.1-RELEASE: Failed to read artifact descriptor for com.meesho.feed:feed-commons:jar:4.11.1-RELEASE: Could not transfer artifact com.meesho.feed:feed-commons:pom:4.11.1-RELEASE from/to redshift (<http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release>): authorization failed for <http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release/com/meesho/feed/feed-commons/4.11.1-RELEASE/feed-commons-4.11.1-RELEASE.pom>, status: 403 Forbidden -&gt; [Help 1]```\n<!subteam^S0276B95C2G> Can you please help here.\nEven though I've updated the jar in the Jfrog. And this same version is picked in the local.",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please check this PR: <https://github.com/Meesho/cas/pull/707>\nit has been build in ring master successfully but is showing failed in git, unable to merge the PR",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<@U07BZVDC9ST> <@U021DF7L7CY> I need to remove the qwest-vs-sort-filter deployable from argo cd. It is now deprecated. Can you please help with this?",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> can you help me with this? <https://meesho.atlassian.net/browse/DEVOPS-18623?atlOrigin=eyJpIjoiNGRlMzZjMjAzY2ZiNDUyNjljYjNkM2YzNGEzMjE3NjEiLCJwIjoiaiJ9>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> please help me with right access for GCP billing dashboard\n<https://meesho.atlassian.net/browse/DEVOPS-18624>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/agent-assist/pull/31>, can you check ringmaster check is failing",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> have created a new deployable in search-indexer and wanted to add vault properties for the same but via ringmaster not able to get option to add the vault configs can you please help here\n<https://ringmaster.meeshogcp.in/applications/config/prd-pfeed-search-elastic-indexer-snf-partial>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nThere is certain log lines which I am able to see on\n<https://0b6ea1325493466faf2f9be526283f5a.psc.asia-southeast1.gcp.elastic-cloud.com:9243/app/discover#/?_g=h@d4dfae2&amp;_a=h@5176634>\nbut not able to see\n<https://console.cloud.google.com/storage/browser/gcs-infr-dvps-meesho-logs-prd/demand/prd-storefront-primary/dt%3D27.04.2025/hr%3D19?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&amp;project=meesho-admin-prd-0622|https://console.cloud.google.com/storage/browser/gcs-infr-dvps-meesho-logs-prd/demand/prd[\u2026]%22f%22:%22%255B%255D%22))&amp;project=meesho-admin-prd-0622>\nIs this is right place to get GCS legs?\ncc <@U020DLT50B0> <@U06C1HPPY8H>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U0291FB76CD>  <@U07B72HU81W>\nMoving this thread here\n<https://meesho.slack.com/archives/C06VB5CU71T/p1745847715581569> for Envoy resetting TCP streams abruptly\n\ncc : <!subteam^S042MNNBG4Q>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR checks are failing. Can anyone please check?\n\n<https://github.com/Meesho/affiliate/pull/517>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U07B72HU81W>\nCan you help with this ticket ?\n<https://meesho.atlassian.net/browse/ACL-2569>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I am facing issues in this PR\n<https://github.com/Meesho/grocery-supply-wms/pull/149>\nGit checkout is failing, can you please help out on priority",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <https://meesho.atlassian.net/browse/DEVOPS-18549> please help in this ticket",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U04CXFQRW92> <@U039GPMUX8X>  <@U06MFC4Q8GH> can you please check this why github checks are failing\n<https://github.com/Meesho/taxonomy/pull/1872>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> trying to test GCS file upload on toolchain, how to config/add gcskey.json to the configs to ensure the same, getting 401 Unauthorized on toolchain for upload",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/124183> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need help in deleting jfrog directories?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/124204> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <https://meesho.atlassian.net/browse/DEVOPS-18640>\nplease help in uploading audio to the gcs bucket",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg check is not getting triggered ! can you check ?\n<https://github.com/Meesho/rx-feed-aggregator/pull/699>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Please help with this\n<https://meesho.atlassian.net/browse/ACL-2573>\ncc: <@U08N4KG7H6W>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S04D6GB4XQQ>, can someone help with access to zookeeper",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Can you please help with this: <https://meesho.atlassian.net/browse/ACL-2574>\ncc: <@U161ESPEU>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://argocd-datascience-prd.meeshogcp.in/applications/argocd-datascience-prd/prd-online-feature-store-read-v4?view=network&amp;resource=>\ncanary pods are not coming up post deployment, last canary analysis was rollbacked",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can someone please check this PR: <https://github.com/Meesho/search-autocomplete/pull/208>, it is taking much time in passing the ringmaster deployment status check",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need access to redisLab",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> D2m is stuck due to stg-deployment-status , need to deploy this . Can you please help?:- <https://github.com/Meesho/online-cg/pull/742>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S084X0JA43F> is search-ct stopped for sale?\n+ <@U039QSD6SGN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S07V94NTTB9> received disk space alert for `mcache-dmnd-pfeed-wishlist-cache-prd-ase1`\nPlease check",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please join the call , need help in db traffice migration\n<https://meet.google.com/bnf-svbs-dzq?hs=122&amp;authuser=0>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you merge this? <https://github.com/Meesho/devops-helm-charts/pull/124277/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> for the cronitor alert `mcache-alerts` , not able to integrate pagerduty as its showing the list as grayed out.\n<https://cronitor.io/app/settings/alerts?env=production&amp;time=7d>\nCan you help by attaching the pagerduty `central-shared-mcache-alerts` with this cronitor alerts rule!",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U06BNTHSBK4> Do we any resolution to the below issue ? We are not able to check the difference of ZK for clp-col-iop on ringmaster ?\ncc :<@U0210FA3U6M>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Did the CDN get enabled for this api path: `/api/3.0/search/suggest` on friday around 7pm, there were drop in the RPS. Can we please check this",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Build failing for this PR: <https://github.com/Meesho/RouteAggregator/pull/261>\n`[ERROR] Failed to execute goal org.apache.maven.plugins:maven-install-plugin:3.0.1:install (default-install) on project routeAggregator: Failed to install artifact com.meesho:routeAggregator:jar:0.8.5: No space left on device` \nPlease check",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S05HDB89RNG> Can you please help with this ticket?\n<https://meesho.atlassian.net/browse/CMR-7110>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I am not able to merge this PR. Please check.\n<https://github.com/Meesho/supplier_platform_growth/pull/1007>\ncc: <@U03K8SPCY77> <@U02ESMGPJ59>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S0846RMCST0>\nstg deployment check is in `Queue` from last 20 minutes\n<https://github.com/Meesho/supplier-rewards-incentives/pull/233>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need your help in merging a revert PR :\n<https://github.com/Meesho/supplier-sf-svc/pull/186>\ncc : <@U087EBUQZ27>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S08GKSNFUR3> not able to access the prod and pre-prod vault, blocked on deployment because of this\ncc: <@U07K9KBC9H9>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you upload the file (experimentsData.json) at location\n<https://console.cloud.google.com/storage/browser/gcs-supl-fnf-config-prd/fnf-route-aggregator-prd;tab=objects?hl=en&amp;invt=AbuSJg&amp;project=meesho-supply-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=false|https://console.cloud.google.com/storage/browser/gcs-supl-fnf-config-prd/fnf-route-aggreg[\u2026]ly-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=false>",
+      "category": "general"
+    },
+    {
+      "query_text": "hey <!subteam^S0276B95C2G>\nPlease merge this PR - <https://github.com/Meesho/ai-agent-assist/pull/8>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nnot able to see configs here <https://ringmaster.meeshogcp.in/applications/config/stg-taxonomy-new> can you check",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U06MFC4Q8GH> <@U039GPMUX8X>\nWe want to run a cron through api hit, can you please enable this endpoint:\n<http://supplier-product-quality-cron.prd.meesho.int|supplier-product-quality-cron.prd.meesho.int>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> There is sync failure, pls help <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-offers-supplierworker?resource=>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR checks are not passing, tried multiple times, can you please help? experiment is blocked due to this\ncc: <@U03MYRCUSMR>\n<https://github.com/Meesho/online-cg/pull/754>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR checks are failing due to `ringmaster-stg-deployment-status`.\nThis check should not be enabled for iOS repositories, IMO.\nPR link: <https://github.com/Meesho/iOS/pull/7557>\nPlease help check.\ncc: <@U02BYQS55CG> <!subteam^S030H4RVD4G>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR checks are not passing for this PR: <https://github.com/Meesho/pdp-iop/pull/218>\n\nDeployment is blocked due to this",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you please help with vault access?\n<https://meesho.atlassian.net/browse/ACL-2593>\ncc : <@U161ESPEU>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> can we please check why alert was not getting triggered for this consumer payment_status_update_topic_retry\n<https://vmselect-infra-prd.meeshogcp.in/select/100/vmui/#/?g0.range_input=30d&amp;g0.end_input=2025-05-06T09%3A35%3A22&amp;g0.tab=0&amp;g0.relative_time=last_30_days&amp;g0.tenantID=100&amp;g0.expr=sum+by+%28kubernetes_namespace%2C+client_id%29+%28label_replace%28%28increase%28kafka_consumer_consumer_fetch_manager_metrics_fetch_rate+%7Bkubernetes_namespace%3D%27prd-order-sync-consumer%27%7D%5B5m%5D%29or+on%28%29+0%29%2C%27client_id%27%2C+%27%241%27%2C+%27client_id%27%2C+%27%28.*%29-%5C%5Cd%2B%24%27%29%29+%3D%3D+0&amp;g0.step_input=800ms|https://vmselect-infra-prd.meeshogcp.in/select/100/vmui/#/?g0.range_input=30d&amp;g0.end_input=2025-05-06[\u2026]%2B%24%27%29%29+%3D%3D+0&amp;g0.step_input=800ms>\ncc: <!subteam^S043LBVA07M>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone please check this - <https://github.com/Meesho/search-iacg/pull/922>\nPR is stuck on checks since last 45-50 mins",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S05HDB89RNG>, Need help in adding a domain verification check while adding SAML auth in a. third party app, can someone with access to DNS please help here?",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> facing some issue with ringmaster dynamic config sync, please help with this",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>  can someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ? cc: <@U06Q21NNZM0>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nThis PR has been stuck for a while. I've already drafted and retried it for review. Could someone please help here !\n<https://github.com/Meesho/supplier-sf-svc/pull/189>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need to upload a sitemap file to folder `sitemap` in gcs bucket - <https://console.cloud.google.com/storage/browser/gcs-dmnd-grwth-pow-sitemap-meesho-com-prd/sitemap?project=meesho-demand-prd-0622&amp;pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))|bucket>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you please help with this ticket: <https://meesho.atlassian.net/browse/DEVOPS-18652>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Pls delete this deployable - <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/int-offer-platform-worker-supply?resource=>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> any VM storage related activity ? getting multiple alerts\nalso grafana is not opening\n<!subteam^S036VSFCMMM>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/124449> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Pushed some team changes for affiliate-backend on Pulse, stuck on Pending Update, please check.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you check why Quality Gate is getting stuck again and again for multiple PRs.\nexample: <https://github.com/Meesho/offer-platform/pull/986>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> please help with this\n<https://meesho.atlassian.net/browse/ACL-2586>",
+      "category": "general"
+    },
+    {
+      "query_text": "cc : <@U02J6695TLN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> pls help with this ticket <https://meesho.atlassian.net/browse/ACL-2594>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you please check the PR? stg is deployed succefully but checks are not getting updated.\n<https://github.com/Meesho/supplier_platform_cataloging/pull/924>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> we're facing multiple instances of 429 in production, can someone please join this call",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please merge these two PRs\n<https://github.com/Meesho/devops-helm-charts/pull/124484>\n<https://github.com/Meesho/devops-helm-charts/pull/124485>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> I am getting merging already inprogress for the PR:  <https://github.com/Meesho/price-aggregator/pull/958> .\nCan you please help here , not able to merge it !\ncc: <@U03LU492XF1> <@U03MYJKGPDE>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nwe are doing a db migration activity and not able to see pods getting connected to new DB\ncan you join the call pls\n```To join the video meeting, click this link: <https://meet.google.com/feh-txof-hjz>\nOtherwise, to join by phone, dial <tel:+1563-447-5084|+1 563-447-5084> and enter this PIN: 742 498 383#\nTo view more phone numbers, click this link: <https://tel.meet/feh-txof-hjz?hs=5>```",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you pls look at this PR. Stuck at \"Send Notification\" state\n<https://github.com/Meesho/offer-platform/pull/1044>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!here> we are putting a fix in  for send notification issue. Plz let us have some time, will let you know once done so that you can retrigger the jobs.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please merge this alert change: <https://github.com/Meesho/meesho-alerts-config/pull/19288/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> facing issue while merging the pr: <https://github.com/Meesho/grocery-reconciliation-and-accounting/pull/241>\nstg deployment has been successful still failing in ringmaster-stg-deployment-status\ncc <@U06632ZM3FZ>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nstatic assets (images) are not loading on pre-prod, getting 404, why is this happening?\ncc: <@U05QXT5570X> <@U06632ZM3FZ>\n\nGetting this error:\n```&lt;Error&gt;\n&lt;Code&gt;NoSuchKey&lt;/Code&gt;\n&lt;Message&gt;The specified key does not exist.&lt;/Message&gt;\n&lt;Details&gt;No such object: gcs-valmo-partner-webview-chunks-int/_next/image&lt;/Details&gt;\n&lt;/Error&gt;```\nCurious to know why is it pointing to the `gcs-valmo-website-chunks-int` bucket and not `gcs-valmo-web-static-assets` bucket, kindly help here",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nPlease implement this ticket.\n<https://meesho.atlassian.net/browse/DEVOPS-18631>\ncc: <@U020VRU8A7M>, <@U020JGCFJHH>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U07B72HU81W>\ncould you help with this?\n<https://meesho.atlassian.net/browse/DEVOPS-18674?atlOrigin=eyJpIjoiYmJkNzEwZGZjNDBlNGU5YzhjNzA1NmIxMTIwYzkwY2MiLCJwIjoiamlyYS1zbGFjay1pbnQifQ>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone please help here, stuck in deployment to staging, getting this error *ERROR: Error in building DockerFile Or Pushing To ECR. Error: hudson.AbortException: script returned exit code 1*\n\n*cc <@U03CK6N6YG6>*",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> grafana dashboards not loading, we are in the middle of a prod issue, please check urgently",
+      "category": "general"
+    },
+    {
+      "query_text": "*<!subteam^S0276B95C2G>* Could you please look into the ringmaster-stg deployment? It\u2019s been stuck in the queue for quite some time.",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL>\nneed access to github\n<https://meesho.atlassian.net/browse/ACL-2597>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please do the needful on this ticket.\n\n<https://meesho.atlassian.net/browse/DEVOPS-18676>",
+      "category": "general"
+    },
+    {
+      "query_text": "Dmed you <@U05QXT5570X>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> unable to access this doc, please help with access - <https://meesho.atlassian.net/wiki/spaces/fcaqo/pages/3948871688|link here>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U06MFC4Q8GH> we are getting different env file in ringmaster stg and vault stg\nCan you please check\n\n<https://ringmaster.meeshogcp.in/applications/config/stg-file-uploader-web>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S026TDTANDC> can you please review and merge this PR\n<https://github.com/Meesho/devops-helm-charts/pull/124685>\nand please sync mRouter as well.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you help is merging this PR , we have conflicts in the D2M\n<https://github.com/Meesho/RouteAggregator/pull/293>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I'm unable to see the application names here. Please help.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <@U04CXFQRW92>coverage on code is not getting even locally all new lines are covered\n<https://github.com/Meesho/RouteAggregator/pull/293>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  This PR is still pending on following checks :\n   ringmaster-deployment-statusExpected \u2014 Waiting for status to be reported\n   ringmaster-stg-deployment-statusExpected \u2014 Waiting for status to be reported\n    <https://github.com/Meesho/affiliate-web/pull/309>\n   Ringmaster  :  <https://ringmaster.meeshogcp.in/applications/cicd/repo/affiliate-web/deployments>\n   Even though on ringmaster everything is successful , waiting for quite a time now , can you help ?",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<@U07B72HU81W> Can you please add <@U08DE03SRRN> on pagerduty?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>  can someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg deployable is healthy still check is failing\n<https://github.com/Meesho/RouteAggregator/pull/298>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S026TDTANDC> can you please provide SSH access to this stg <https://console.cloud.google.com/compute/instancesDetail/zones/asia-southeast1-a/instances/vm-cntr-admin-upload-supplier-dev?orgonly=true&amp;project=meesho-central-dev-0622&amp;supportedpurview=organizationId&amp;inv=1&amp;invt=Abw74A|VM> ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> pls join : <https://meet.google.com/uvw-cwoc-tur?authuser=2>\nWe need to move some traffic to a diff slave for a prod issue",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nPlease change the default branch to develop\nthanks!\n<https://github.com/Meesho/price-aggregator-go>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> ring master status is not getting updated, pr link: <https://github.com/Meesho/grocery-supply-orchestration/pull/342>\nstg deployment has already been done\ncc <@U06632ZM3FZ>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\ngetting this error\n`child workflow execution error (type: CDChildWorkflow, workflowID: gcp_prd-price-aggregator-admin-159-deployment-workflow, runID: 1b496628-09b6-4fe3-be29-7ab5fbcf930f, initiatedEventID: 11, startedEventID: 12): activity error (type: CDApplicationActivityUpdateValues, scheduledEventID: 17, startedEventID: 18, identity: 1@prd-ringmaster-worker-545c7f76d6-66lj2@): cpu_request is not of type int or string (type: 1, retryable: true)`\nno changes were made in deployment configs recently\ncan you please help us with this\n\ncc: <@U02SJ94MMA8>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> can you please merge this: <https://github.com/Meesho/devops-helm-charts/pull/124754> ? Thanks",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <https://github.com/Meesho/go-client/pull/43>\nCan you please check this PR , getting `This branch is out-of-date with the base branch`  even commits are same .",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Can you please upload and replace the file in this <https://console.cloud.google.com/storage/browser/gcs-dmnd-web-pow-static-assets-prd/api/v1;tab=objects?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&amp;inv=1&amp;invt=AbxLTA&amp;project=meesho-demand-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=false|gcs path> and cache burst it.",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S026TDTANDC> can you please upload below lottie json files on the below mentioned path.\n\ngcs-dmnd-web-pow-static-assets-prd/lottie/combo_deals/\n(combo_deals directory doesn't exist already)",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Supplier Panel Learning Hub is failing to load. <https://supplier.meesho.com/learning-hub/>\n\nCan you please help?\n\ncc: <@U161ESPEU>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Could you please provide access to below metabase portal?\n<https://metabase.supl-h1.meeshogcp.in/auth/login>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you help with this ticket <https://meesho.atlassian.net/jira/software/projects/DEVOPS/boards/5?selectedIssue=DEVOPS-18687>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> - Need access to Azure playground. Can you please help?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please give me the access of pager duty",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> We got multiple non 2xx on product-amplifyr on 9 may between 11:30 pm and 12 am. These non 2xx were on new pods. Please check.",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need to add cac-configs for file-uploader-web and file-uploader-consumer , it's showing permission denied on vault. Can you help here\n\nCC : <@U078CPY3PDL>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Help me with this ticket, access for pagerduty <https://meesho.atlassian.net/browse/DEVOPS-18688>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U07B72HU81W>\n<https://meesho.atlassian.net/browse/DEVOPS-18692>\ncould you look into this?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you please provide access for this dataengg BU\u2019s argocd? <https://argocd-dataengg-prd.meeshogcp.in/applications>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> not able to merge this PR. can you please check?\nPR link : <https://github.com/Meesho/live-commerce-frontend/pull/700>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://docs.google.com/spreadsheets/d/1hhjc_mpUA-cdEibFBET7PpUf65CczR1tuLDhTF0c7ic/edit?gid=0#gid=0>\n<!subteam^S0276B95C2G> please update the following repos to enforce a rule where any PR merged to `develop` or `master` must have *at least 2 approvers*.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> getting blank page in argo stg for this application, can anyone help ehre plz\n<https://argocd-dev.meeshogcp.in/applications/argocd-dev/applications/argocd-dev/stg-ads-ofs-catalogs-elastic-indexer>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U020CCJR8RM> <!subteam^S0276B95C2G> we have a requirement to create new endpoint whose data will be served from CDN only, please help with the onboarding steps\n<https://meesho.atlassian.net/browse/DEVOPS-18698>\ncc: <@U020DLT50B0>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you help for this ticket - need access to create compute in backend workspace of data-bricks.\n<https://meesho.atlassian.net/browse/DEVOPS-18699>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109> can you help to assign any port (8097) on this vm , for deploying streamlit application :\n vm-dsci-mlp-inference-loadtest-prd-ase1\ninstance id 7430800544893085571",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>  can someone cache burst this : <https://affiliate.meesho.com/affiliate-web/static/assets-manifest.json> in Cloud CDN ?\nAlso if there is any Job for this can you share , or it can be done via cache invalidation ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please delete this argo deployable from pre-prod : <https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/int-seen-filtering-worker?resource=>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/orion/pull/199/checks?check_run_id=42130984737> this is queued from a long time\ntried multiple times draft and ready for review , please check this",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL>, <!subteam^S0276B95C2G>, <@U06E4AYB47N>, Please provide me me access for github - <https://meesho.atlassian.net/browse/ACL-2609?linkSource=email>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nPlease change the default branch to develop for these repos.\n<https://github.com/Meesho/marketplace-oms>\n<https://github.com/Meesho/product-pricing>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Unable to deploy live-commerce-web, unable to approve/promote canary analysis. Can someone please help here?\ncc: <@U03MVV5AZ8V>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> Can someone please look into this?\n<https://meesho.atlassian.net/browse/DEVOPS-18707>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109> I'm not able to install meesho debugg apk in my mobile. seems It is restricted. Can you please help me to resolve this",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Please take this ticket - <https://meesho.atlassian.net/browse/DEVOPS-18708>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need access to vault\nplease check this ticket: <https://meesho.atlassian.net/browse/ACL-2614>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> getting failure during one of the deployment (other deployment are working) from ring master can you please check- <https://ringmaster.meeshogcp.in/applications/cicd/repo/order-state-management/status/257>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> Can you please check this ticket I need github access.\n<https://meesho.atlassian.net/browse/ACL-2612>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> we'll be doing the payout db cutover tonight around 11 pm, we may need your support so request you to be available around that time\ncc: <@U07T9CTR0PN>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> this PR is stuck for stg-deployment-status. Converted the PR to draft and ready for review, but it's still not working. can someone please check this?\n<https://github.com/Meesho/affiliate/pull/562>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> <!subteam^S08M150EQ31>, getting \"No space left on device\" when trying to deploy on pre-prod. Pl help.\ncc: <@U07B72HU81W>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "Facing issue with this pr , as it is stuck in ringmaster deployment status for a long time , can we please check this <https://github.com/Meesho/PaymentIntegration/pull/630>\n<!subteam^S0276B95C2G>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> staging deployment is stuck here, please check\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/savvy-sellers/status/75>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/reseller-payment/pull/571>\nstg check is running from more then 20 min\ni can see this is successfully deployed on pre prod and stg web\nnot able to see argo status for stage for consumer and scheduler\ncan you please look into this ?",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Ringmaster status not getting updated: <https://github.com/Meesho/grocery-reconciliation-and-accounting/pull/259>\ncc <@U06632ZM3FZ> <@U0210G0MSKT>",
+      "category": "general"
+    },
+    {
+      "query_text": "@devops-oncall not able to update min count of pods through ringmaster for manifest-serving, changes are not reflecting will someone be able to help with this ?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nFor below PR last check is not passing. Tried with closing and re-opening the PR. Can you please help here. Its blocking production release\n<https://github.com/Meesho/price-aggregator/pull/986>\ncc : <@U03LU492XF1>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you check <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-file-uploader-consumer?resource=>\nPods are becoming unhealthy randomly.\n\nCC: <@U06C1HY3FMX> <!subteam^S03AC6303PV>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> during revert quality gate is failing can any one help to skip it for now? - <https://github.com/Meesho/order-state-management/pull/3175>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can someone please join this call? Need some help in debugging an ip whitelisting issue. Calls at the 3p genesys are getting hit from some other IPs apart from our NAT ips.\n<https://meet.google.com/zdr-cmjb-jpr>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> i need to write an RCA for this incident <https://meesho.slack.com/archives/C04SL982YVA/p1746582425289389>. but by mistake i clicked this as an external RCA, so not getting an option to work on the RCA. can someone help me over here?\nCC: <@U041Z2SFBQS> <@U020M7DSKV1>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> getting alert for multiple pod restart for supplier_platform_cataloging. Can you please help.\n<https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-supplier-platform-cataloging>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Pls help merge this: <https://github.com/Meesho/devops-helm-charts/pull/125057>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S08F5HTJ1E0> Can you please check this ?\n<https://meesho.slack.com/archives/C022ZFZT4H0/p1747258477309529>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  <@U07B72HU81W>\ncan someone approve and merge this PR?\n<https://github.com/Meesho/devops-helm-charts/pull/125072>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> data is missing for this metric during: 29 April, 8.55 to 9.07 PM\n<https://grafana-prd.meeshogcp.in/d/8t8js7iro41l/manifestation-eks?orgId=1&amp;from=1745939525763&amp;to=1745942017022&amp;viewPanel=175> but alert set with below query did not got triggered\n```sum( rate( OUT_manifest_carrier_DEL_4 {job=\"kubernetes-manifest-metrics\"}[5m]) * 60 != 0) &lt;= 0.5 or absent(rate(OUT_manifest_carrier_DEL_4{job=\"kubernetes-manifest-metrics\"}[5m]))```\n tried running this query on grafana with 1m avg , still not able to get the data in that\ncan you please check?",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/model-inference-orchestrator/pull/99>\nadded hotfix as branch name, why are checks still running ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Cron jobs are failing in the VM with below error: VM link: <https://console.cloud.google.com/compute/instancesDetail/zones/asia-southeast1-a/instances/deng-dpcon-zepplin-prd-ase1-7whg?project=meesho-dataengg-prd-0622&amp;inv=1&amp;invt=AbxWPg&amp;organizationId=589969641884|https://console.cloud.google.com/compute/instancesDetail/zones/asia-southeast1-a/instance[\u2026]g-prd-0622&amp;inv=1&amp;invt=AbxWPg&amp;organizationId=589969641884>.  Can we please check this on priority\n```ubuntu@deng-dpcon-zepplin-prd-ase1-7whg:~$ kubectl scale deploy os-trino-ss-metricinsights-bk1-coordinator -n os-trino-ss-metricinsights-bk1 --replicas=1\nE0518 21:54:00.409056   15085 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials\nE0518 21:54:00.422336   15085 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials\nE0518 21:54:00.436003   15085 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials\nerror: no objects passed to scale```",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> not able to open zk UI, can you please check",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S08M150EQ31> Need to host a python script for a slack bot for my team's channel, can someone please assist?\ncc: <@U02102E8JGZ>",
+      "category": "general"
+    },
+    {
+      "query_text": "<https://ringmaster.meeshogcp.in/applications/cicd/repo/price-aggregator-go/status/83>\n<!subteam^S08F5HTJ1E0>\ncan someone check this\nthe new deployable is still causing problems",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>, can you please check this : <https://github.com/Meesho/store-front/pull/3023>\n\nits stuck for sometime now",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please check this - <https://github.com/Meesho/order-state-management/pull/3185>\nstuck for more than hours, multiple retry done",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you check this ticket <https://meesho.atlassian.net/browse/ACL-2376>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg checks being stucked since last 30 mins, tried converting draft but its not helping. This is blocking for a deployment:\n<https://github.com/Meesho/search-orchestrator/pull/1129>\ncc: <@U021DF7L7CY>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> Could you  provide this access needed it ASAP\n<https://meesho.atlassian.net/browse/DEVOPS-18724>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need to enable Google Ads API in a project, can anyone help me out here?",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Getting <https://app.us.snyk.io/org/meesho-default/pr-checks/fd4f1a51-949f-4cf0-8eea-4a74123c2988|security/snyk (Meesho-default)> issue on PR , can u pls help ?\nPR: <https://github.com/Meesho/grocery-supply-orchestration/pull/344>\n\ncc: <@U021ALKNVSL>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg checks being stucked since last 30 mins, tried converting draft but its not helping. This is blocking for a prod deployment\n<https://github.com/Meesho/pdp-iop/pull/236>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S07LXA2J9H9> Ringmaster status stuck, not able to merge - <https://github.com/Meesho/JobScheduler/pull/105>. Please check",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> This PR stuck since yesterday on stg checks, blocking deployment\n<https://github.com/Meesho/search-indexer/pull/634>\n\nand build is failing bcz no space on disk\n```java.io.IOException: No space left on device\n\n\tat java.base/java.io.UnixFileSystem.createFileExclusively(Native Method)\n\n\tat java.base/java.io.File.createTempFile(File.java:2170)```\nCan you please help here,\ncc: <@U021DF7L7CY> <@U07BZVDC9ST>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Synk is failing even after no issues found. Please check.\n<https://github.com/Meesho/ValCrew-UMS/pull/143>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need help here .Checks got  stuck even though the latest changes are deployed  and healthy on int and staging for all deployables.\n<https://github.com/Meesho/search-iacg/pull/976>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you please help in rolling back cross-sell-web , new canary pods are coming from recent version instead of past :- <https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/prd-cross-sell-web?rollback=-1&amp;resource=>\nIt's impacting prod.\nIf needed please join here:-\n<https://meet.google.com/mem-kpxz-pkq?authuser=0>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone please help with this <https://ringmaster.meeshogcp.in/applications/cicd/repo/IdP/status/4>\nthe file is present at the desired location\ncc: <@U026D2W91KN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> the repo <https://github.com/Meesho/JobScheduler|job-scheduler> does not have main branch. Please create it from develop and sync the change in ringmaster. Also change the default branch of repo to develop",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/online-cg/pull/776>\nCan someone help me out ? Build is failing .",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> deployment stg stuck for long\n<https://github.com/Meesho/rx-feed-aggregator/pull/707>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> seeing 500s on telegraf but not seeing the same on envoy for `route-aggregator-high-throughput` . Can you help figure out why this is happening?\nWe have triggered a deployment but there is no code change, only increased the number of canary pods when deploying\ncc: <@U06CBN9K1AL> <@U06EUP7M4Q5>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> can you please pick this up : <https://meesho.atlassian.net/browse/DEVOPS-18736>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>, <https://github.com/Meesho/offer-platform/pull/1093>\n\nthis is hotfix branch is failing at int deployment, can you pls check this",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/supplier-insights/pull/192> deployment is failing can you please check this. Not able to merge PR",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> <https://console.cloud.google.com/storage/browser/gcs-infr-dvps-meesho-logs-prd/supply/int-voice-bot-1;tab=objects?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&amp;inv=1&amp;invt=Abx5eA&amp;project=meesho-admin-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=true|https://console.cloud.google.com/storage/browser/gcs-infr-dvps-meesho-logs-prd/supply/int[\u2026]min-prd-0622&amp;prefix=&amp;forceOnObjectsSortingFiltering=true>\nFor this i`nt-voice-bot-1`, not seeing logs for may, able to download for april, for may getting url not found\n\n`gsutil -m cp -r <gs://gcs-infr-dvps-meesho-logs-prd/supply/int-voice-bot-1/dt=20.05.2025/hr=16> /Users/ayushsaxena/Desktop/gcplogs/vc`",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/community/pull/921>, `stg deployment check` is failing even after deploying it to stg",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "Testing escalation after 7pm",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Why did the staging check fail? The build was successful, but it was not deployed to staging.\n<https://github.com/Meesho/search-orchestrator/pull/1137>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> not able to access the dev ZK\n<https://zk-web-dev.meeshogcp.in>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please merge <https://github.com/Meesho/devops-helm-charts/pull/125334>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please merge <https://github.com/Meesho/devops-helm-charts/pull/125346/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "HIi <!subteam^S04D6GB4XQQ> <!subteam^S0276B95C2G> this check \"ringmaster-github / ringmaster-stg-deployment-status\" is in queue since long time for this pr <https://github.com/Meesho/Mq/pull/307> . can you please check this.",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S04D6GB4XQQ> <!subteam^S0276B95C2G> ringmaster has been stuck for many days for this pr <https://github.com/Meesho/query-gateway/pull/11>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Need to add an alert on Pulse, to detect low RPM",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> I need access of SSH key, can you please provide me",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> it is already onboarded in production, but not in pre-production. Please merge this PR: <https://github.com/Meesho/devops-helm-charts/pull/125375>\ncc <@U041Z2SFBQS>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please merge <https://github.com/Meesho/devops-helm-charts/pull/125381/files#diff-0719dd8fe1ad90d3fdec4599c5e636f966d9cc76b8513cdc5255e114d4fe85a8>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> <@U06E4AYB47N> Please help with below ticket: <https://meesho.atlassian.net/browse/DEVOPS-18763>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>, can you please provide SSH access to the VM instances?\n<https://meesho.atlassian.net/browse/DEVOPS-18761>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nHey team,\nWe\u2019re planning to migrate the *Atlas frontend* from *Meesho infra* to *Valmo infra*. Currently, it's an internal tool, but we want to make it publicly accessible. Here are the key action points:\n\u2022 Move the frontend hosting from Meesho infra to Valmo infra.\n\u2022 Update the Google login config: right now it's restricted to Meesho emails \u2014 we want to make it public (no domain restriction).\n\u2022 Onboard the app to *Akamai* for CDN and security.\n\u2022 Set up a custom domain: *`<http://atlas.valmo.in|atlas.valmo.in>`*\ngithub links: <https://github.com/Meesho/valmo-logistics>\nPrev links: <https://docs.google.com/spreadsheets/d/1KpfhhGDXAYVKAJpAuKtKRcNGydgr6AiOnNCLhcR93d4/edit?usp=sharing>\nLet me know what\u2019s needed from my side to get this moving. Thanks! :raised_hands:\nCC: <@U03C6EWAG5N> <@U02F9C75ATH> <@U05QXT5570X>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please merge <https://github.com/Meesho/devops-helm-charts/pull/125400/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Could you please provide this access <https://meesho.atlassian.net/browse/DEVOPS-18779>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need access to vault `prd &amp; int` . Can you pls help with the same\ncc: <@U020PGHMNMR>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/config-manager/pull/256> check is failing again and again. Could you check this out?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> need help with this\n<https://meesho.atlassian.net/browse/ACL-2633>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> need help with this\n<https://meesho.atlassian.net/browse/DEVOPS-18798>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hey <!subteam^S0276B95C2G>\nPlease merge this PR\n<https://github.com/Meesho/ai-agent-assist/pull/10>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please help here [Prod ]\ncontainer \"visual-search\" in pod \"prd-visual-search-6d4cd656d5-57ccg\" is waiting to start: trying and failing to pull image\n<https://argocd-demand-prd.meeshogcp.in/applications/prd-visual-search?resource=>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> we have a `playwright` script which we want to run on a VM, can we please connect to discuss what all will be required to do this and what details we need to share ??",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Debugging a prod issue.\nCould you tell us, from which vault path does `admin-panel-reseller` pick its configs?\ncc <@U085BNA5WLC> <@U02J6695TLN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/orion/actions/runs/15185563248/job/42705018690?pr=210>\n\nthis build is failing please help\n\ngo: <http://github.com/redis/go-redis/v9@v9.5.1|github.com/redis/go-redis/v9@v9.5.1>: reading <http://github.com/Meesho/go-redis/go.mod|github.com/Meesho/go-redis/go.mod> at revision v9.6.2: git ls-remote -q origin in /home/runner/go/pkg/mod/cache/vcs/54dd3d6c9e4a4f5919e6f512b678ecd238f8ce5f4ffcbdefde35cf25457f0e06: exit status 128:\n<https://github.com/Meesho/orion/actions/runs/15185563248/job/42705018690?pr=210#step:5:6|5>\n\tremote: The 'Meesho' organization has enabled or enforced SAML SSO.\n<https://github.com/Meesho/orion/actions/runs/15185563248/job/42705018690?pr=210#step:5:7|6>\n\tremote: To access this repository, visit <https://github.com/orgs/Meesho/sso?authorization_request=ALLS76ECW5YHHGHXFR23G3TIF4NKZA5PN5ZGOYLONF5GC5DJN5XF62LEZYASRFEIVVRXEZLEMVXHI2LBNRPWSZGOQJQLMIVPMNZGKZDFNZ2GSYLML52HS4DFVNHWC5LUNBAWGY3FONZQ> and try your request again.\n<https://github.com/Meesho/orion/actions/runs/15185563248/job/42705018690?pr=210#step:5:8|7>\n\tfatal: unable to access '<https://github.com/Meesho/go-redis/>': The requested URL returned error: 403\n<https://github.com/Meesho/orion/actions/runs/15185563248/job/42705018690?pr=210#step:5:9|8>\nError: Process completed with exit code 1.\n\ncc <@U020PAX1HA6>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stuck on quality gate multiple times. Can you pls check?  <https://github.com/Meesho/growth-marketing/pull/637> cc <@U06JSGZ335M>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S04D6GB4XQQ><!subteam^S0276B95C2G> need help with configuring staging deployment of query-gateway\n<https://argocd-dataengg-prd.meeshogcp.in/applications/argocd-dataengg-prd/int-query-gateway?resource=>\n<https://github.com/Meesho/query-gateway>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>\nNeed help in getting repository clone access in the new laptop\ncc <!subteam^S03SQB1P3EX>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://meet.google.com/ohf-krzx-ptk> can someone please join the call?\ncc : <@U031MD96ZB3> <@U020M7DSKV1>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you approve and merge? <https://github.com/Meesho/devops-helm-charts/pull/125522>\nAlso, can you sync mRouter?\ncc : <@U03C6EWAG5N> <!subteam^S02PYL32P5M>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> continuing <https://meesho.slack.com/archives/C07BAQYCB7A/p1747734108647359|thread> from <#C07BAQYCB7A|>, can we please proceed with onboarding the endpoints to <http://prod.meeshoapi.com|prod.meeshoapi.com>\ncc: <@U06JSGZ335M> <@U020DAMDK8W> <@U02GYL5NU7L>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I was deploying community-web-eks on prd. The canary pods are not coming.\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/community/status/111>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109> api calls are timing out for the CIDR 10.202 series. Can you check if some whitelisting is needed?",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> the checks are stale for this PR: <https://github.com/Meesho/grocery-supply-allocation/pull/133> for a long time\nCan someone help\ncc <@U08BK3EQ8SZ>\nhcc",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109>\nwe have a public DNS created for meesholink\nwhich we share with external 3P OMS vendors.\n\nbut we are not able to hit the APIs with the same DNS ( for our testing )\nCurl\n```curl --location '<http://stg-api.meesholink.com/v1/products-list?date_range_to=1739949543000&amp;is_active=true|stg-api.meesholink.com/v1/products-list?date_range_to=1739949543000&amp;is_active=true>' \\\n--header 'meesholink-access-token: wef' \\\n--header 'request-id: 1243231423r24f' \\\n--header 'meesholink-client-id: vinculum'```\ncc <@U087X8U4ZNK> <@U03MLP17HQW>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S026TDTANDC> can someone review and merge this PR and sync the mrouter. <https://github.com/Dinkar2103/devops-helm-charts/pull/1/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "This message was deleted.",
+      "category": "general"
+    },
+    {
+      "query_text": "This message was deleted.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> need some support related to container registry vs artifact registry in the meesho-admin-prd project. I was using container registry to upload images for cloud run but I think that is deprecated, it is asking me to migrate to artifact registry but I am missing access. This is needed to deploy a Image download cloud run to add a new logline to understand the failure.",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> could you provide access to google translate api - <https://meesho.atlassian.net/browse/DEVOPS-18845>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> latency increase in exploit-online-cg-grpc-web can you check once :\n <https://grafana-prd.meeshogcp.in/d/be1b868e-4e4b-422d-af14-1a94f069f0e5/exploit-online-cg-grpc?from=now-24h&amp;to=now>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please check this PR, stuck on Quality Gate\n<https://github.com/Meesho/affiliate/pull/538>\ncc : <@U0837PU2QQ2>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC>not able to login into argocd, can we please check?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> Not able to login in supply argo cd\n<https://argocd-supply-prd.meeshogcp.in/login?has_sso_error=true>\n\ngetting Login failed.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S04BX4A5Q4V>\nPR checks are stuck here <https://github.com/Meesho/supplier-payment/pull/1431>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> pr is stuck from past 27 mins\n<https://github.com/Meesho/meesho-engagement/pull/657>\nplease help here",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> PR is stuck from long\n<https://github.com/Meesho/IdP/pull/60>\ncc: <@U06BRBCM0VA>",
+      "category": "general"
+    },
+    {
+      "query_text": "This message was deleted.",
+      "category": "general"
+    },
+    {
+      "query_text": "*<!channel>*\nGitHub is facing issue\n<https://www.githubstatus.com/>\nso u might see many PR stuck",
+      "category": "general"
+    },
+    {
+      "query_text": "This message was deleted.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> need to delete the cloud dns record against <http://kibana.meesho.com|kibana.meesho.com> this is pointing to a random website for <http://fluigent.com|fluigent.com>.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G> Can you please enable merge Pull request access to codeowners\nor merge after 2 approvals from code-owners\n\nI have 2 approvals from code-owner for this <https://github.com/Meesho/admin-panel-promotions/pull/275|PR>, still not able to merge this PR.\n\ncc: <@U161ESPEU>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> In stg, if we *search* any namespace then `\"applications/argocd-dev\"` path is getting added in between which is a blank page.\n<https://argocd-dev.meeshogcp.in/applications/applications/argocd-dev/stg-price-aggregator-admin>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> d2m pr is not mergable, please help here asap\n<https://github.com/Meesho/search-indexer/pull/643>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S0276B95C2G>, we want to integrate oneTap login on mq-ui, can you mark this feature as enabled via admin for mqui application.\n<https://developers.google.com/identity/gsi/web/guides/offerings>\n\ncc: <@U020MLY5J7M>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> checks are stuck on this PR : <https://github.com/Meesho/supplier-consent-management/pull/202>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> this pr is struck with stg deployment check as its not getting triggered even after multiple rebuilds. Can you please check <https://github.com/Meesho/ad-server/pull/4056>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://github.com/Meesho/price-aggregator-go/pull/297>\nthe build for this PR is failing\ncan you help in figuring out why.",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://github.com/Meesho/competition-product/pull/468>\n\nthis PR is stuck",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://github.com/Meesho/product-pricing/pull/1371>\nThe ringmaster-deployment-status check is stuck from a long time(an hour). Can you please help here? Need to deploy this today",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/affiliate-web/pull/333>\nCI for this on stg is in progress for quite some time , can someone check .\nhave already tried making PR to draft and then ready for review .",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U04CXFQRW92> Hi, please give github access to this account <mailto:dbe-doorman@meesho.com|dbe-doorman@meesho.com>. This account would be used for doorman.\ncc: <@U02HAH0C8AE>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> was deploying the changes in prd in 4 deployable and it got deployed in 3 successfully but got dependabot errors in 4th one. Can you help resolve this error in 4th one?\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/product-pricing/status/202>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please merge this PR\n<https://github.com/Meesho/devops-helm-charts/pull/125623>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109> unable to signup to figma getting *app_not_enabled_for_user*",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> quality gate failing even after adding UTs its not getting picked in sonarqube. Can you pls check this\nPR: <https://github.com/Meesho/offline-candidate-generator/pull/420>\nsonarqube: <https://sonarqube-dev.meeshogcp.in/dashboard?id=com.meesho.ml.candidate-generator%3Aoffline-candidate-generator&amp;pullRequest=420>\ncc: <@U0210FA3U6M>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  <https://github.com/Meesho/go-core/pull/243/checks?check_run_id=42887625096>\nwhy this  is failing <https://github.com/Meesho/go-core/pull/243>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> Observing duplicate entries of each edge-proxy deployable when searching in ringmaster. Pls check",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S08F5HTJ1E0> when iam trying to deploy in pdp and cart deployables with existing build, it's giving the below error- *Failed undefined*, can anyone please help",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  We have started writing unit tests for code coverage for the repo feed-aggregator-web. We want to exclude all the proto generated files and model.go files from our current code coverage of unit tests. Can you help us in setting this up?\nrepo : <https://github.com/Meesho/feed-aggregator>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U020CCJR8RM> please help with this ticket\n<https://meesho.atlassian.net/browse/DEVOPS-18890>\ncc <@U02TLT7DKLG> <@U0211U0U8N5>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please help with this ticket(this ticket has been open for 5 days please expedite):\n<https://meesho.atlassian.net/browse/DEVOPS-18800>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you please clone this prod grafana <https://grafana-prd.meeshogcp.in/d/a15b905c-76ac-4528-a20c-f600e9e990a3/mcache-client-dashboard?orgId=1&amp;refresh=1m> to stg grafana as well? I tried but facing issue with grafana competiblity!",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please provide the access for argo CD\n<https://meesho.atlassian.net/browse/ACL-2638>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> i am not getting pager calls. My mobile number is registered and i used to get calls but it stopped randomly. Please check this.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you check this ticket\n<https://meesho.atlassian.net/browse/DEVOPS-18870>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone help with this ticket? <https://meesho.atlassian.net/browse/DEVOPS-18878>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please help with access to argoCD and Vault\n<https://meesho.atlassian.net/browse/ACL-2639>\ncc : <@U02102E8JGZ>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone please help with this ticket <https://meesho.atlassian.net/browse/DEVOPS-18899>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please help with this <https://meesho.atlassian.net/browse/DEVOPS-18739?atlOrigin=eyJpIjoiMTkwN2UxNGI4Nzk4NDY3MTg0NmY0OGY5N2NjOWNmYTIiLCJwIjoiaiJ9>\nCC: <@U03C6EWAG5N> <@U02F9C75ATH> <@U081W2DJUJK>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please check this ticket and give the access -\n<https://meesho.atlassian.net/browse/DEVOPS-18908>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you stop the scale-up for search its a prod-issue , we are right now at 1 percent",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> grafana has become slower and failing to load page intermittently! Any ongoing issue or activity?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> got alerts of pod mulptiple restarting yesterday night can you help here: <https://meesho.pagerduty.com/incidents/Q1GXBEKWSNXXZN?utm_campaign=channel&amp;utm_source=slack>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  <https://github.com/Meesho/payment-communication/pull/379/files>\ni am reverting the changes but quality gate is failing for this\ncan someone please help ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> grafana isnt loading for me, any ongoing issue?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S08GKSNFUR3> we had deployed a new cron today which was supposed to run at 9:30 pm but can't see the pods coming up here, please help with <https://argocd-farmiso-prd.meeshogcp.in/applications/prd-farmiso-backend-scheduler?resource=>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> <!subteam^S08GKSNFUR3> Team we are facing iam policy permission issues on pre prod, We are testing an imp flow on pre prod which requires file upload., this needs to be release tomorrow 1st half, in order to do so, we need to close this minor testing.",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> please merge <https://github.com/Meesho/devops-helm-charts/pull/125735/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please pick up this ticket :  <https://meesho.atlassian.net/browse/DEVOPS-18928>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S027JU7QEEL>\nPlease provide me access to ArgoCD and Vault\n<https://meesho.atlassian.net/browse/DEVOPS-18930>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S026TDTANDC>, could you please help with this ticket?\n<https://meesho.atlassian.net/browse/DEVOPS-18901>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nNeed support for Video Merch Experiment being planned to link videos in the backend to product IDs and also upload the videos to GCS",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>, staging build is not getting deployed. It's throwing an error with `Failed: undefined` as shown in the screenshot below. Can you please check to unblock PR deployment?",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S04BX4A5Q4V>  <https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/prd-reseller-payment-web?rollback=-1&amp;resource=>\n canary for this is running for a long time and we  are not able to promote this ,  getting this error\n```{\"message\":\"Workflow not found: sql: no rows in result set\\n\",\"status\":\"error\"}%   ```\ncan we please look into this ?",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S04D6GB4XQQ> can you please look into these two tickets as soon as possible\n<https://meesho.atlassian.net/browse/DEVOPS-18884>\n<https://meesho.atlassian.net/browse/DEVOPS-18609>\n<@U020CCJR8RM>\ncc: <@U02TLT7DKLG>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> stg deployment check is stuck in queued state since long time, tried draft&lt;-&gt;ready for review couple of times\n<https://github.com/Meesho/orion/pull/214>\nFYR <@U020YKVCCU9>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you grant me the access to vault-dev and vault-prd?",
+      "category": "general"
+    },
+    {
+      "query_text": "This message was deleted.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> any issue going on argocd? pre-prod applications are intermittently not opening\n<https://argocd-demand-prd.meeshogcp.in/applications/int-review?resource=>",
+      "category": "general"
+    },
+    {
+      "query_text": "When I am looking at `int-communicator` application, it is suddenly closing with this error and I cannot find the application for some minutes after. This has happened a few times in the last hour.\n\nIs there any ongoing issue with ArgoCD? <!subteam^S0276B95C2G>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> some of the checks are failing for this PR : <https://github.com/Meesho/agent-support-aggregator/pull/1656>\ncan u please check?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Please set develop as default branch for   <https://github.com/Meesho/vetan|repo1>, <https://github.com/Meesho/Induct|repo2>, <https://github.com/Meesho/shipfare|repo3>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Need access for the ACL Jira Board\n<https://meesho.atlassian.net/browse/ACL-1928>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Please provide the access for ACL Jira Board\n<https://meesho.atlassian.net/browse/ACL-1928>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U021DF7L7CY> <@U08Q25T5LP5> from yesterday there is no pod up for int-horizon\n\ngetting this error",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> checks are not passing in this pr <https://github.com/Meesho/ad-server/pull/4060> due to pre validation script. can u please help with this",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> one of pod of dynamic-rule-engine-web\n went down, Can you please look into this . what is  causing this\npod: prd-dynamic-rule-engine-web-primary-64dfccd4f5-5zfmx",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can someone please check and merge this PR?\n<https://github.com/Meesho/devops-helm-charts/pull/125888>",
+      "category": "general"
+    },
+    {
+      "query_text": "<@U05QXT5570X> We had deployed some older version code for competition product enricher yesterday on preprod for testing and are having issues deploying latest version now. Can you help?\n<https://argocd-supply-prd.meeshogcp.in/applications/argocd-supply-prd/int-competition-product-enricher?operation=false&amp;resource=>",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S027JU7QEEL> Could someone please help me with GitHub access in the absence of <@U06E4AYB47N> ?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>, please check the PR. It is not passing the checks after multiple retries to convert to draft and open again\n<https://github.com/Meesho/supplier-store/pull/782>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://github.com/Meesho/affiliate-web/pull/339> This PR is failing on stg environment deployment , can someone check on priority have to deploy this urgently",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> The stage build is failing. Please check the issue as it is a high priority.\n<https://github.com/Meesho/supplier_platform_insights/pull/226>\ncc: <@U045XGE10J3> <@U02SA29AVKL> <@U02ESMGPJ59>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>  <!subteam^S026TDTANDC> can you please upload and replace the below file in GCS in <https://console.cloud.google.com/storage/browser/gcs-dmnd-web-pow-static-assets-prd/api/v1?pageState=(%22StorageObjectListTable%22:(%22f%22:%22%255B%255D%22))&amp;invt=AbuGiA&amp;project=meesho-demand-prd-0622|this> path ? Also cache burst it.\n<https://static-assets.meesho.com/api/v1/config.json>",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please provide the access for argo CD dev and argo CD demand prod\n<https://meesho.atlassian.net/browse/ACL-2658>\n<https://meesho.atlassian.net/browse/ACL-2659>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you pls help create a bucket in gcs named - `cursor-extension`\ncc. <@U175555P0>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Hey please purge cache for `<https://supplier.meesho.com/css/meesho-supplier.webflow.css>`\ncc: <@U08AY32JB5Y>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Team, need help with google cloud project id.",
+      "category": "general"
+    },
+    {
+      "query_text": "this is a test msg]",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> autoscaling is not working properly in <https://ringmaster.meeshogcp.in/applications/prd-offer-platform> leading to a lot of alerts",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0538KCDTLN> can you delete all the alerts for this deployable :- *text-search-catalogs-elastic-indexer*",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can you pls join here - <https://meet.google.com/dpj-atav-mun>\nBlocked on PR merge for a production issue.\ncc: <@U02J6695TLN> <@U0211VCL4SD> <@U078Y3YPV41>",
+      "category": "general"
+    },
+    {
+      "query_text": "hey <!subteam^S04BX4A5Q4V> <@U07BQR9SBLM>\n<https://meesho.atlassian.net/browse/DEVOPS-18844>\nwe raised the ticket for this on monday, want your help here to close as we are blocked here, if we can close this today?\ncc: <@U07T9CTR0PN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> could you please provide exotel access for the voicebot of meesho and external clients as well?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0210JLB109>, could you please provide exotel access for the voicebot of meesho and external clients as well?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>, I need access to Vault",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <!subteam^S026TDTANDC> can you upload and replace the file in this <https://console.cloud.google.com/storage/browser/gcs-dmnd-web-pow-static-assets-cloudflare-prd;tab=objects?inv=1&amp;invt=AbywXQ&amp;project=meesho-demand-prd-0622&amp;prefix=robot&amp;forceOnObjectsSortingFiltering=false|gcs path>.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> need help in cloud DNS routing tonight at 10 PM. This is required to migrate traffic btw sql db instances. Can you pls let me know who will be available for the same, will add to the call for the same.\ncc : <!subteam^S043LBVA07M> <@U02J44D6HGF>",
+      "category": "database"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> could you please help in uploading these files to GCS - <https://meesho.atlassian.net/browse/DEVOPS-18884>\n\ncc <@U021P87V92Q>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S04D6GB4XQQ> Please help with below two tickets: 1)<https://meesho.atlassian.net/browse/DEVOPS-18998> 2)<https://meesho.atlassian.net/browse/DEVOPS-18999>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> <!subteam^S0276B95C2G>\nGot a merge conflict in shipit repository for a develop to main PR. <https://github.com/Meesho/ship-it/pull/294>\nGetting conflicts in my PR as there is a commit in the main branch from devopsmeesho : <https://github.com/Meesho/ship-it/commit/2dafebb8397be8f9467efa5e599634eef2910f35>. (Can we revert this?)\nHow do I resolve this? Will require have admin access for this repository.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> need to merge PR <https://github.com/Meesho/devops-helm-charts/pull/125980>.\nContext - when new pods of FA are coming up while deployment, they are throwing unavailable stats for few initial seconds, hence enabling slow start to handle this issue.\nCC: <@U041Z2SFBQS>",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> unable to edit the alerts in pulse, getting this error, but unable to find the PR which needs the approval. Can you check",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> getting `Error: getaddrinfo ENOTFOUND <http://scheduled-events-consumer.int.meesho.int|scheduled-events-consumer.int.meesho.int>`\ncan someone pls look into this\nwe need this to be tested now as this is important for the upcoming sunday sale",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> not able to fetch vault secrets for this in ringmaster - <https://ringmaster.meeshogcp.in/applications/config/int-semantic-search-2>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> unable to sync zookeeper for ofs , please help here asap urgent for sale",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> seeing this error on ringmaster",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> unable to connect to instance using browser ssh. was working fine last time. need this to trigger a warmup script for sale",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> clp-col-iop-web is not getting pre-scaled, showing some error,\nwe need to get this pre-scaled for the widgets which would go live at 11:45",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> need urgent help with changing a zk value, please join here - <https://meet.google.com/yuo-faqm-kbp?authuser=0>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can we please check why HPA was not getting triggered, since 10:30 cpu util was >70%\nHave manually scaled for now",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> pls join this link: <https://meet.google.com/qcs-cckn-pap>\nWe are facing issue in offers.\ncc: <!subteam^S07RQRFRW02>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please provide the access for argo CD dev and argo CD demand prod\n<https://meesho.atlassian.net/browse/ACL-2664>\n<https://meesho.atlassian.net/browse/ACL-2665>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Clp-col-iop is still scaled( any reason for it). Can we pls downscale it\ncc: <!subteam^S05DVUFJ53K> <@U03BDUPU7P1>",
+      "category": "general"
+    },
+    {
+      "query_text": "can someone please check why autoscaling added in ringmaster for offer-platform-internal for 200 pods to come up at 7AM not working:\n<https://ringmaster.meeshogcp.in/applications/prd-offer-platform-internal>",
+      "category": "kubernetes"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nTrying to deploy new ship-it deployables in pre-prod and prod,\nDo not have access to create new secrets in the vault.\nCan someone help here?",
+      "category": "deployment"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\nCan you please help in checking why the checks are failing for the main PR\n<https://github.com/Meesho/ds-rto-post-order-fds/pull/42>?",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Not able to merge this PR. Getting error: You're not authorized to push to this branch.\nPR link : <https://github.com/Meesho/admin-panel-communications/pull/274>\ncc : <@U03N19ESXSQ>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Ringmaster is not able to  read dyn-file from github. Can you pls check this for pdp-iop",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Deployment got stuck .Please help\n<https://argocd-demand-prd.meeshogcp.in/applications/argocd-demand-prd/prd-rx-feed-aggregator?resource=>\n```pre-upgrade created\n15:40:15  2025-06-02T15:40:08+05:30  <http://external-secrets.io|external-secrets.io>  ExternalSecret  prd-rx-feed-aggregator    rx-feed-aggregator    Synced  Degraded              \n15:41:11  2025/06/02 15:41:08 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:42:18  2025/06/02 15:42:09 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:44:10  2025/06/02 15:43:58 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:45:06  2025/06/02 15:44:59 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:46:02  2025/06/02 15:46:00 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:48:08  2025/06/02 15:47:59 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:49:04  2025/06/02 15:49:00 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".\n15:50:12  2025/06/02 15:50:01 ERROR: [transport] Client received GoAway with error code ENHANCE_YOUR_CALM and debug data equal to ASCII \"too_many_pings\".```",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> not able to edit the alert here. Can you please check.\n<https://pulse.meeshogcp.in/alert/alerts/epg>\ncc: <@U078Y3YPV41>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Please check this PR stuck from a long time\n<https://github.com/Meesho/affiliate/pull/627#pullrequestreview-2888713546>\ncc : <@U0837PU2QQ2>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I am getting following error when promoting canaries. Please help here.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> I am a new joinee as sde 1 and require github access\ncc:<@U06CBP35XKJ>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S0276B95C2G>,\nI have raised access requests in the below two tickets on the 15th of May. This is being a blocker for me. Can someone help me with these and expedite the process?\n\n<https://meesho.atlassian.net/browse/ACL-2613>\n<https://meesho.atlassian.net/browse/DEVOPS-18709>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S0276B95C2G>\nI had raised these tickets for access requests. Can you please look into them and help with it. they have been raised since some time and are being a blocker for me.\nThe tickets are:\n<https://meesho.atlassian.net/browse/ACL-2642>\n<https://meesho.atlassian.net/browse/DEVOPS-19002>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n<https://ringmaster.meeshogcp.in/applications/cicd/repo/segment-store/status/89>\n\ncanary has not come up its been a while since this shows success on ring master",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> I'm trying to generate free version of Google AI Studio API key, but it says permission denied. Can someone please help?",
+      "category": "service"
+    },
+    {
+      "query_text": "This message was deleted.",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I need a dns entry <https://dev-tools.meeshogcp.in> pointing to <https://argocd-dev.meeshogcp.in/applications/argocd-dev/stg-dev-tools?view=network&amp;conditions=false&amp;resource=>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S0276B95C2G> could you please give me the access to DataBricks as my access is blocked to VertexAI API in notebook setup and it's kind of urgent. Please provide asap:\n\n<https://meesho.atlassian.net/browse/ACL-2626>",
+      "category": "service"
+    },
+    {
+      "query_text": "<@U06E4AYB47N> please help with this ticket for github accees:\n<https://meesho.atlassian.net/browse/ACL-2672>\n<https://meesho.atlassian.net/browse/ACL-2675>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S026TDTANDC>,\nPlease provide me access to metabase\n<https://meesho.atlassian.net/browse/DEVOPS-19059>",
+      "category": "general"
+    },
+    {
+      "query_text": "Hi <!subteam^S026TDTANDC>\nPlease help with merge access <https://meesho.atlassian.net/browse/ACL-2680>\ncc : <@U02102E8JGZ>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G>\n\nCan you check? It's stuck for more than an Hour now\n\n<https://github.com/Meesho/price-aggregator/pull/1053>\n<https://github.com/Meesho/price-aggregator/pull/1053/checks?check_run_id=43375337994>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <https://github.com/Meesho/reseller-payment/pull/580>\nwe are releasing hotfix for reseller payment, it is stuck on stg-deployment , can you please check , its quite urgent ?",
+      "category": "jenkins"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> Not able to access this doc on confluence\n<https://meesho.atlassian.net/wiki/spaces/SRE/pages/3243573408/Querying+logs+using+Bigquery>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> I am unable to see the controller metrics of the following endpoint on `manifest-supply`\n`/v1/shipment/details/partner`\ncould you assist why this is happening?",
+      "category": "service"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> want to skip canary, we want to rollback a release immediately, can you help here",
+      "category": "deployment"
+    },
+    {
+      "query_text": "Need access to VertexAI. I have to perform LLM based experiment in Notebook using Gemini 2.5 pro.\n\ncc <@U02JLF4S04V>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> can you please help in merging this PR : <https://github.com/Meesho/devops-helm-charts/pull/126276/files>",
+      "category": "general"
+    },
+    {
+      "query_text": "hi team, Can you please provide me access to abacus\n<https://meesho.atlassian.net/browse/DEVOPS-19077?atlOrigin=eyJpIjoiNmQ2MzZhN2E4ZjQ0NGQ2ODljNmZlZmM2M2Y2NWIxZDMiLCJwIjoiaiJ9>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> <@U07B72HU81W>\nCould you help creating the VMs related to this tkt?\n<https://meesho.atlassian.net/browse/DEVOPS-19079>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S0276B95C2G> Can someone merge this PR <https://github.com/Meesho/devops-helm-charts/pull/126280>\ncc: <@U026D2W91KN>",
+      "category": "general"
+    },
+    {
+      "query_text": "<!subteam^S026TDTANDC> please approve access request for gitHub, I am a new joinee:\n<https://meesho.atlassian.net/browse/ACL-2672>\n\ncc: <@U031MD96ZB3>",
+      "category": "general"
+    }
+  ]
+}
